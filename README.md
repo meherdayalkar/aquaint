@@ -6,6 +6,14 @@ $$\text{\bf Measure} \longrightarrow \text{\bf Understand} \longrightarrow \text
 
 ---
 
+## 🌐 Live Deployment & Source Code
+
+- **GitHub Repository:** [https://github.com/meherdayalkar/aquaint](https://github.com/meherdayalkar/aquaint)
+- **Deployment Platform:** Vercel (React + Vite)
+- **Default Branch:** `main`
+
+---
+
 ## 🚀 How to Run the Project
 
 ### 1. Prerequisites
@@ -111,7 +119,7 @@ Use the 1-click deterministic scenario injectors at the top of the screen:
 - Toggle specific repairs (*"Fix Block B Leak"*, *"Pause Rain Irrigation"*, etc.) or adjust the irrigation schedule slider.
 - See real-time projections for:
   - Daily & monthly litres saved
-  - Financial utility bill savings ($\$ / \text{month}$)
+  - Financial utility bill savings (₹ / month at ₹48.00 / 1,000L)
   - Electrical pumping energy avoided ($\text{kWh}$)
   - Carbon emissions offset ($\text{kg CO}_2\text{e}$)
   - Simulated green dashed consumption curve overlay
