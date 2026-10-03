@@ -1,0 +1,32 @@
+[
+  {
+    "id": "usr_demo_admin",
+    "name": "Elena Vance",
+    "email": "elena.vance@greenwood.edu",
+    "role": "Chief Hydrologist",
+    "salt": "37cf25b9c99dc08e5c686156ca0ea102",
+    "hash": "8a7accbf715275211ef46a15bae6547b372071db6d2638344685d3ebaefdca1503abcc338248eba2619502005d351fc7d7bfb217cfcac4a9dacff71096f1981a",
+    "createdAt": "2026-09-15T08:00:00.000Z",
+    "tourCompleted": false
+  },
+  {
+    "id": "usr_1790941609211_1e28e1da",
+    "name": "Marcus Chen",
+    "email": "marcus.chen@greenwood.edu",
+    "role": "Facility Manager",
+    "salt": "68d4bb5ac3f8e572844f20a5911cbd4c",
+    "hash": "2ec85bc085d13e252caa96a193a89537783086e104d06330ab1f61cde524d1610feaaca747a590a8f0a11fe9282f0db3d7ad5fc2c0d7d43f58cce93b50935e6f",
+    "createdAt": "2026-10-02T11:46:49.211Z",
+    "tourCompleted": true
+  },
+  {
+    "id": "usr_1790941998633_78ea96ec",
+    "name": "Dr. Maya Lin",
+    "email": "maya.lin.1790941998583@greenwood.edu",
+    "role": "Sustainability Lead",
+    "salt": "d264afc6403943782305c1e0685ca76f",
+    "hash": "87e09ce8dd49c2286eed2c2fc711cb1fe2b271d6c3f84b94fa140aee3fbe7a6e37af0e457de2009d45bdb07fe5cfa927ca379b411122566fba2689bf212814d7",
+    "createdAt": "2026-10-02T11:53:18.633Z",
+    "tourCompleted": true
+  }
+]

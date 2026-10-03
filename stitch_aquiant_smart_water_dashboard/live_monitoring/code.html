@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-primary":"#006875","secondary-fixed-dim":"#89ceff","surface-container-low":"#161b29","on-primary-fixed-variant":"#004f58","on-secondary":"#00344d","on-background":"#dde2f5","outline":"#849396","error-container":"#93000a","on-error":"#690005","error":"#ffb4ab","inverse-on-surface":"#2a303f","on-tertiary-fixed":"#002113","surface-tint":"#00daf3","primary-container":"#00e5ff","surface-container-highest":"#2f3543","background":"#0d1320","on-tertiary-fixed-variant":"#005236","surface-container":"#1a1f2d","surface-container-lowest":"#080e1b","primary-fixed-dim":"#00daf3","on-error-container":"#ffdad6","on-primary-container":"#00626e","inverse-surface":"#dde2f5","secondary-container":"#00a2e6","on-secondary-fixed":"#001e2f","surface":"#0d1320","tertiary":"#a8ffd2","on-primary-fixed":"#001f24","on-tertiary":"#003824","tertiary-fixed-dim":"#4edea3","tertiary-container":"#5be9ad","on-tertiary-container":"#006645","on-secondary-fixed-variant":"#004c6e","outline-variant":"#3b494c","surface-variant":"#2f3543","secondary":"#89ceff","on-secondary-container":"#00344e","on-surface":"#dde2f5","secondary-fixed":"#c9e6ff","surface-bright":"#333948","surface-dim":"#0d1320","primary":"#c3f5ff","primary-fixed":"#9cf0ff","on-primary":"#00363d","surface-container-high":"#242a38","on-surface-variant":"#bac9cc","tertiary-fixed":"#6ffbbe"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter-sm":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","margin-sm":"1rem","gutter":"1.5rem","space-xl":"2.5rem","margin":"2rem","margin-lg":"3rem","space-md":"1rem","space-xs":"0.25rem","gutter-lg":"2rem"},fontFamily:{"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-md":["Inter"],"display-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"title-md":["Inter"],"label-sm":["Inter"],"display-xl-mobile":["Plus Jakarta Sans"],"display-xl":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-lg":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"display-lg":["44px",{lineHeight:"52px",letterSpacing:"-0.025em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"display-xl-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"display-xl":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"500"}],"display-lg-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col pt-space-lg px-gutter-sm"><div class="flex items-center justify-between px-space-xs mb-space-xl"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary-container text-[22px]">water_drop</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">AQUIANT</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase mt-1">Water Intelligence</span></div></div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-primary">ENTERPRISE</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="command-center" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Command Center</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="live-monitoring" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">waves</span><span class="font-body-md text-body-md">Live Monitoring</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="leakage-intelligence" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">warning</span><span class="font-body-md text-body-md">Leakage Intelligence</span></div><span class="w-5 h-5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm flex items-center justify-center font-bold">1</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ai-water-intelligence" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span class="font-body-md text-body-md">AI Intelligence</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-body-md text-body-md">Analytics</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="water-savings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-body-md text-body-md">Water Savings</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="alerts" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-body-md text-body-md">Alerts</span></div></a></nav></div><div class="flex flex-col gap-space-sm p-gutter-sm bg-surface-container-lowest"><div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Grid</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">unfold_more</span></div><span class="font-title-md text-title-md text-on-surface truncate">Campus Central</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">6 Smart Hydro-Meters</span></div><div class="flex items-center justify-between px-space-sm py-1.5 rounded-lg bg-surface-container-low"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Mesh Telemetry</span></div><span class="font-label-sm text-label-sm text-tertiary font-semibold">99.8%</span></div><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface leading-tight">Elena Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-0.5">Chief Hydrologist</span></div></div><button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-[20px]">settings</span></button></div></div></aside><div class="pl-72 min-h-screen flex flex-col"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="font-body-sm text-body-sm">Greenwood Uni</span><span class="font-label-sm text-label-sm">/</span><span class="font-body-sm text-body-sm text-on-surface font-semibold">Campus Central</span></div><div class="h-4 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-low"><span class="material-symbols-outlined text-secondary text-[16px]">cloud</span><span class="font-label-sm text-label-sm text-on-surface-variant">31.2°C • 0mm Precip • Clear</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container/20"><span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span><span class="font-label-sm text-label-sm text-error font-medium">1 Anomaly Detected</span></div></div><div class="flex items-center gap-space-sm"><button class="flex items-center gap-2 px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors"><span class="material-symbols-outlined text-[18px]">download</span><span>Export Report</span></button><button class="flex items-center gap-2 px-space-md py-2 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:brightness-110 transition-all"><span class="material-symbols-outlined text-[18px]">emergency_home</span><span>Dispatch Squad</span></button><div class="h-6 w-px bg-surface-container-highest mx-1"></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<div class="p-margin-lg flex flex-col gap-space-xl">
+<!-- Top Header Banner & Stream Status -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+            LIVE TELEMETRY INGESTION • 10s POLL CYCLE • 24/24 SENSORS ONLINE
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+            INGESTION DELAY: 142ms
+          </span>
+</div>
+<div class="flex items-baseline gap-space-md mt-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Live Monitoring</h1>
+<span class="font-body-md text-body-md text-on-surface-variant hidden md:inline">Real-time telemetry stream across campus facilities, vertical risers, and sub-meters</span>
+</div>
+</div>
+<!-- Quick Search & Controls -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative flex items-center bg-surface-container-low rounded-lg px-3 py-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant mr-2">corporate_fare</span>
+<select class="bg-transparent font-label-lg text-label-lg text-on-surface focus:outline-none cursor-pointer pr-4">
+<option class="bg-surface-container-low text-on-surface" selected="">Greenwood Central Campus</option>
+<option class="bg-surface-container-low text-on-surface">Oakridge Science Park</option>
+<option class="bg-surface-container-low text-on-surface">West Lake Residential Quad</option>
+</select>
+</div>
+<div class="relative flex items-center bg-surface-container-low rounded-lg px-3 py-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant mr-2">search</span>
+<input class="bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none w-48" placeholder="Search sub-meter, UID, riser..." type="text"/>
+</div>
+<div class="flex items-center p-1 rounded-lg bg-surface-container-low">
+<button class="px-3 py-1.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold transition-all">Live</button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all">1h</button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all">6h</button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all">24h</button>
+</div>
+</div>
+</div>
+<!-- Executive Health Ribbon (4 KPIs) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Metric 1: Campus Instant Flow -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col justify-between shadow-sm relative overflow-hidden">
+<div class="absolute right-0 top-0 bottom-0 w-1 bg-error"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Campus Instant Flow</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-error font-medium px-2 py-0.5 rounded-full bg-error-container/20">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>+28.7%
+          </span>
+</div>
+<div class="my-space-sm flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface tracking-tight">82.4</span>
+<span class="font-title-md text-title-md text-on-surface-variant">L/min</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Nominal envelope: 64.0 L/min</span>
+<span class="text-error font-medium">Breach active</span>
+</div>
+</div>
+<!-- Metric 2: Dynamic Hydraulic Head -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Avg Dynamic Pressure</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-medium px-2 py-0.5 rounded-full bg-tertiary/10">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Stable Head
+          </span>
+</div>
+<div class="my-space-sm flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface tracking-tight">3.82</span>
+<span class="font-title-md text-title-md text-on-surface-variant">bar</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Grid baseline: 3.90 bar</span>
+<span class="text-on-surface font-medium">Normal variance</span>
+</div>
+</div>
+<!-- Metric 3: Active Monitoring Nodes -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Active Ingestion Nodes</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium px-2 py-0.5 rounded-full bg-secondary-container/20">
+            Mesh Linked
+          </span>
+</div>
+<div class="my-space-sm flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface tracking-tight">24</span>
+<span class="font-title-md text-title-md text-on-surface-variant">/ 24</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>4 Quadrants synchronized</span>
+<span class="text-tertiary">100% Signal</span>
+</div>
+</div>
+<!-- Metric 4: System Health Summary -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Active Incident Matrix</span>
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-ping"></span>
+</div>
+<div class="my-space-sm flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-error tracking-tight">1</span>
+<span class="font-title-md text-title-md text-on-surface-variant">Critical Alarm</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="truncate">Sector 1 • Block B Floor 2</span>
+<span class="text-error font-medium underline cursor-pointer">View ID</span>
+</div>
+</div>
+</div>
+<!-- Main Spatial Workspace: Left Master Navigator & Right Telemetry Stage -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT PANE: Hierarchical Hydro-Grid Tree (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">account_tree</span>
+<span class="font-title-md text-title-md text-on-surface">Spatial Hydro Hierarchy</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">4 Sectors</span>
+</div>
+<!-- Sector 1: Residential Hall - Block B (Active incident node) -->
+<div class="flex flex-col rounded-lg bg-surface-container overflow-hidden">
+<!-- Sector Accordion Header -->
+<div class="p-3.5 flex items-center justify-between bg-surface-container-high/80 cursor-pointer">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">domain</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Residential: Block B</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dormitory complex • 4 risers</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container/30 text-error font-label-sm text-label-sm font-semibold">
+                +15.4 L/min
+              </span>
+</div>
+<!-- Floor Drilldowns -->
+<div class="flex flex-col p-2 gap-1.5 bg-surface-container-lowest/60">
+<!-- Floor 4 -->
+<div class="flex items-center justify-between p-2.5 rounded-lg hover:bg-surface-container-high/40 transition-colors cursor-pointer text-on-surface-variant">
+<div class="flex items-center gap-2.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Floor 4 (Penthouse / Buffer)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">UID: SM-B04-FL4 • Nominal</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-on-surface">4.2 <span class="font-body-sm text-body-sm text-on-surface-variant">L/m</span></span>
+<div class="font-label-sm text-label-sm text-on-surface-variant">4.10 bar</div>
+</div>
+</div>
+<!-- Floor 3 -->
+<div class="flex items-center justify-between p-2.5 rounded-lg hover:bg-surface-container-high/40 transition-colors cursor-pointer text-on-surface-variant">
+<div class="flex items-center gap-2.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Floor 3 (Upper Dorms)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">UID: SM-B03-FL3 • Standby</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-on-surface">0.0 <span class="font-body-sm text-body-sm text-on-surface-variant">L/m</span></span>
+<div class="font-label-sm text-label-sm text-on-surface-variant">4.20 bar</div>
+</div>
+</div>
+<!-- Floor 2 (SELECTED STATE) -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-highest shadow-md relative overflow-hidden cursor-pointer">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-error"></div>
+<div class="flex items-center gap-2.5 pl-1.5">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface font-bold">Floor 2 Residential</span>
+<span class="px-1.5 py-0.2 rounded bg-error text-on-error font-label-sm text-label-sm font-semibold">BREACH</span>
+</div>
+<span class="font-label-sm text-label-sm text-error">UID: SM-B02-FL2 • Active Surge</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-error font-bold">18.9 <span class="font-body-sm text-body-sm text-error/80">L/m</span></span>
+<div class="font-label-sm text-label-sm text-on-surface-variant">3.82 bar (-0.38)</div>
+</div>
+</div>
+<!-- Floor 1 -->
+<div class="flex items-center justify-between p-2.5 rounded-lg hover:bg-surface-container-high/40 transition-colors cursor-pointer text-on-surface-variant">
+<div class="flex items-center gap-2.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Floor 1 (Dining &amp; Lobby)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">UID: SM-B01-FL1 • Nominal</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-on-surface">6.8 <span class="font-body-sm text-body-sm text-on-surface-variant">L/m</span></span>
+<div class="font-label-sm text-label-sm text-on-surface-variant">4.30 bar</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sector 2: Academic Core -->
+<div class="p-3.5 rounded-lg bg-surface-container flex items-center justify-between hover:bg-surface-container-high/60 transition-colors cursor-pointer">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">school</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Academic Core — Hostel North</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">6 Flow zones • 18.8 L/min baseline</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-on-surface">18.8 <span class="font-body-sm text-body-sm text-on-surface-variant">L/m</span></span>
+<div class="font-label-sm text-label-sm text-on-surface-variant">3.60 bar</div>
+</div>
+</div>
+<!-- Sector 3: Central Water Storage -->
+<div class="p-3.5 rounded-lg bg-surface-container flex items-center justify-between hover:bg-surface-container-high/60 transition-colors cursor-pointer">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">water_damage</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Central Storage — Tank 2</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">42,100 L Reserve • 84% Capacity</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-on-surface">32.5 <span class="font-body-sm text-body-sm text-on-surface-variant">L/m</span></span>
+<div class="font-label-sm text-label-sm text-on-surface-variant">3.40 bar</div>
+</div>
+</div>
+<!-- Sector 4: Landscape Irrigation -->
+<div class="p-3.5 rounded-lg bg-surface-container flex items-center justify-between hover:bg-surface-container-high/60 transition-colors cursor-pointer">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">yard</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Landscape Zone 2</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">RAIN INTERLOCK</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automated weather shutoff</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-on-surface">0.0 <span class="font-body-sm text-body-sm text-on-surface-variant">L/m</span></span>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Closed</div>
+</div>
+</div>
+</div>
+<!-- Infrastructure Visual Tile -->
+<div class="rounded-xl overflow-hidden bg-surface-container-low shadow-sm p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Physical Shaft Geometry</span>
+<span class="font-label-sm text-label-sm text-primary">CAD Overlay</span>
+</div>
+<div class="w-full h-36 rounded-lg bg-surface-container-highest overflow-hidden relative">
+<img class="w-full h-full object-cover opacity-60 hover:opacity-80 transition-opacity" data-alt="Technical architectural section cut of a modern university building riser maintenance shaft with copper water distribution pipes, pressure transducers, ultrasonic clamp-on meters, and backflow preventers illuminated in atmospheric dark slate and cyan tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhi0E8SMV4GLePHISto9NeI2Yw18LlxoFCrzeiAKyGBS4z4mmp2SVqizE6KNNyole5Dc3j7lDFtLYxL84y7Q55o2dGZqZ9WbU_Rs0h5bO-NpNxGW7VtEvUNZsd-bsabU0u_jkYiNHX4wlDovcB5xPhS8ub2sUa0hYoKvD8MJnRooaXYTeRJ4wHdDKpm9sbv3gcyUAV5k2RBbMDQM16ePGclC1rDkrhkUkHaNCI9xhBbSMJ32Htpbuq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<span class="font-semibold">Block B North Core Shaft</span>
+<span class="text-tertiary">Sensors Clamped OK</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT PANE: Detailed Telemetry Viewport (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Active Node Header Container -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-md shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-error text-[28px]">water_lux</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-md text-headline-md text-on-surface">Block B — Floor 2 Residential Riser</span>
+<span class="px-2 py-0.5 rounded-full bg-error/15 text-error font-label-sm text-label-sm font-semibold">ANOMALY ELEVATED</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Node: <span class="text-on-surface font-mono">#ND-RISER-02B</span></span>
+<span>•</span>
+<span>75mm Copper Riser (14 yrs)</span>
+<span>•</span>
+<span>Shaft North Core</span>
+</div>
+</div>
+</div>
+<!-- Isolation Valve Telemetry Badge -->
+<div class="flex items-center gap-3 bg-surface-container px-3.5 py-2 rounded-lg self-start md:self-auto">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Solenoid Valve</span>
+<span class="font-label-lg text-label-lg text-tertiary font-semibold">ISO-B02-N: ARMED</span>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[24px]">valve</span>
+</div>
+</div>
+<!-- Oscilloscope & Real-Time Hydrograph Section -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">show_chart</span>
+<span class="font-title-md text-title-md text-on-surface">Synchronous Hydrograph (Flow vs Dynamic Pressure)</span>
+</div>
+<!-- Chart Legend -->
+<div class="flex items-center gap-space-md font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-1 rounded-full bg-primary-container"></span>
+<span class="text-on-surface">Observed Flow (L/min)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-0.5 bg-outline-variant"></span>
+<span class="text-on-surface-variant">Model Envelope (3.5 L/min)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-1 rounded-full bg-error"></span>
+<span class="text-error">Pressure Wave (bar)</span>
+</div>
+</div>
+</div>
+<!-- Vector Real-time Flow / Pressure Oscilloscope -->
+<div class="w-full h-56 relative flex items-center justify-center">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 800 220">
+<defs>
+<!-- Gradient for Flow Waveform -->
+<lineargradient id="flowGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#00e5ff" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#00e5ff" stop-opacity="0.0"></stop>
+</lineargradient>
+<!-- Gradient for Pressure Dip Waveform -->
+<lineargradient id="pressGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#ffb4ab" stop-opacity="0.15"></stop>
+<stop offset="100%" stop-color="#ffb4ab" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Grid Horizontal Lines -->
+<line stroke="#242a38" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="800" y1="40" y2="40"></line>
+<line stroke="#242a38" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="800" y1="90" y2="90"></line>
+<line stroke="#242a38" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="800" y1="140" y2="140"></line>
+<line stroke="#242a38" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="800" y1="190" y2="190"></line>
+<!-- Baseline Envelope (Model expectation: 3.5 L/m flatline around y=185) -->
+<rect fill="#242a38" height="20" opacity="0.4" width="800" x="0" y="175"></rect>
+<line stroke="#849396" stroke-dasharray="6 3" stroke-width="1.5" x1="0" x2="800" y1="185" y2="185"></line>
+<!-- Sudden Breach Waveform Event (starts minute 04:30 / x=280) -->
+<!-- Pressure Path (Red/Coral) showing sudden pressure loss -->
+<path d="M 0,55 
+                         C 80,56 160,54 260,55
+                         C 275,56 285,115 300,122
+                         C 340,130 400,120 460,125
+                         C 520,122 580,128 640,124
+                         C 700,126 750,123 800,125" fill="none" stroke="#ffb4ab" stroke-width="2.5"></path>
+<!-- Dynamic Flow Rate Area & Line (Cyan) showing huge sustained step-up -->
+<path d="M 0,186 
+                         C 80,185 160,187 260,186 
+                         C 275,185 285,75 300,68 
+                         C 330,62 360,74 400,65 
+                         C 440,58 480,72 520,66 
+                         C 560,60 600,70 640,64 
+                         C 680,60 730,68 770,64 
+                         L 800,65 L 800,220 L 0,220 Z" fill="url(#flowGradient)"></path>
+<path d="M 0,186 
+                         C 80,185 160,187 260,186 
+                         C 275,185 285,75 300,68 
+                         C 330,62 360,74 400,65 
+                         C 440,58 480,72 520,66 
+                         C 560,60 600,70 640,64 
+                         C 680,60 730,68 770,64 
+                         L 800,65" fill="none" stroke="#00e5ff" stroke-width="3"></path>
+<!-- Anomaly Callout Pin on Burst Point -->
+<circle cx="285" cy="75" fill="#ffb4ab" r="5"></circle>
+<circle class="animate-ping" cx="285" cy="75" fill="none" opacity="0.6" r="11" stroke="#ffb4ab" stroke-width="1.5"></circle>
+<!-- Live Ingestion Cursor Head -->
+<circle cx="798" cy="65" fill="#00e5ff" r="4.5"></circle>
+<line opacity="0.8" stroke="#00e5ff" stroke-dasharray="2 2" stroke-width="1" x1="798" x2="798" y1="0" y2="220"></line>
+</svg>
+<!-- Chart Overlay Annotations -->
+<div class="absolute left-72 top-3 bg-surface-container-high/90 backdrop-blur-md px-2.5 py-1.5 rounded text-left shadow-lg pointer-events-none">
+<div class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Hydraulic Surge Event: 04:32:11 UTC
+                </div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">+15.4 L/min instantaneous step change</div>
+</div>
+</div>
+<!-- Time Axis Labels -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm px-1">
+<span>-15 min (04:20)</span>
+<span>-10 min (04:25)</span>
+<span class="text-error font-medium">-05 min (04:30 Breach)</span>
+<span>-02 min (04:33)</span>
+<span class="text-primary font-semibold">T-0 Now (04:35:12)</span>
+</div>
+</div>
+<!-- Quad Sensor Multimetric Matrix -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm">
+<!-- Sensor 1: Dynamic Pressure Head -->
+<div class="p-3.5 rounded-lg bg-surface-container flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">Dynamic Pressure</span>
+<span class="material-symbols-outlined text-[16px] text-error">speed</span>
+</div>
+<div class="my-2 flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">3.82</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">bar</span>
+</div>
+<span class="font-label-sm text-label-sm text-error flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span>-0.38 bar instantaneous drop
+              </span>
+</div>
+<!-- Sensor 2: Fluid Temperature -->
+<div class="p-3.5 rounded-lg bg-surface-container flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">Fluid Temp</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">thermostat</span>
+</div>
+<div class="my-2 flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">19.4</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">°C</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span>Consistent aquifer temperature
+              </span>
+</div>
+<!-- Sensor 3: Flow Velocity -->
+<div class="p-3.5 rounded-lg bg-surface-container flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">Flow Velocity</span>
+<span class="material-symbols-outlined text-[16px] text-primary">air</span>
+</div>
+<div class="my-2 flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">2.41</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">m/s</span>
+</div>
+<span class="font-label-sm text-label-sm text-error flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">warning</span>High shear acoustic vibration
+              </span>
+</div>
+<!-- Sensor 4: Ultrasonic Frequency Peak -->
+<div class="p-3.5 rounded-lg bg-surface-container flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">Acoustic Signature</span>
+<span class="material-symbols-outlined text-[16px] text-error">graphic_eq</span>
+</div>
+<div class="my-2 flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">42.1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">kHz</span>
+</div>
+<span class="font-label-sm text-label-sm text-error flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">emergency</span>Pipe rupture acoustic match
+              </span>
+</div>
+</div>
+<!-- Downstream Sub-Fixture Distribution Breakdown -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Downstream Fixture Allocation Matrix</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Calculated via Micro-Pulse Mass Balance</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Segment A -->
+<div class="p-3 rounded-lg bg-surface-container flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Units 201–212 (North Wing)</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-tertiary font-label-sm text-label-sm">DORMANT</span>
+</div>
+<div class="my-1.5 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface">0.2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">L/min (Passive Standby)</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 1.2%"></div>
+</div>
+</div>
+<!-- Segment B -->
+<div class="p-3 rounded-lg bg-surface-container flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Units 213–224 (South Wing)</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-tertiary font-label-sm text-label-sm">DORMANT</span>
+</div>
+<div class="my-1.5 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface">0.3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">L/min (Passive Standby)</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 1.6%"></div>
+</div>
+</div>
+<!-- Segment C: The Loss Location -->
+<div class="p-3 rounded-lg bg-surface-container flex flex-col justify-between shadow-inner">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-error font-semibold">Shaft &amp; Riser Manifold</span>
+<span class="px-1.5 py-0.5 rounded bg-error text-on-error font-label-sm text-label-sm font-bold">PHYSICAL LOSS</span>
+</div>
+<div class="my-1.5 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-error font-bold">18.4</span>
+<span class="font-label-sm text-label-sm text-error/80">L/min (97.3% of Node Flow)</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 97.3%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Rapid Response & Forensic Command Actions -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-sm">
+<div class="flex flex-wrap items-center gap-space-sm">
+<a class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg font-semibold hover:brightness-110 transition-all shadow-md" data-path="leakage-intelligence" href="#">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+<span>Investigate Forensic Evidence</span>
+</a>
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Simulate Valve Isolation</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-error-container/20 text-error font-label-lg text-label-lg hover:bg-error-container/40 transition-colors">
+<span class="material-symbols-outlined text-[18px]">engineering</span>
+<span>Dispatch Field Squad (WO-8924)</span>
+</button>
+</div>
+<button class="flex items-center gap-1.5 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm px-3 py-2 transition-colors">
+<span class="material-symbols-outlined text-[16px]">sim_card_download</span>
+<span>Export Raw Stream (.csv)</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Log Feed & Signal Diagnostics -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">reorder</span>
+<span class="font-title-md text-title-md text-on-surface">Sub-Meter Raw Event Ingestion Log</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Showing latest 4 packet bursts</span>
+</div>
+<div class="flex flex-col divide-y divide-surface-container">
+<div class="py-2.5 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-mono text-on-surface-variant font-label-sm text-label-sm">04:35:10.428</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="font-body-sm text-body-sm text-on-surface">FLOW_RATE_EXCEEDED: SM-B02-FL2 telemetry packet confirmed 18.91 L/min</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">LoRaWAN SF7 • RSSI -72dBm</span>
+</div>
+<div class="py-2.5 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-mono text-on-surface-variant font-label-sm text-label-sm">04:35:00.114</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="font-body-sm text-body-sm text-on-surface">PRESSURE_DELTA_ALARM: Head drop -0.38 bar sustained across 6 polling windows</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">LoRaWAN SF7 • RSSI -71dBm</span>
+</div>
+<div class="py-2.5 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-mono text-on-surface-variant font-label-sm text-label-sm">04:34:50.002</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">HEARTBEAT_ACK: SM-B03-FL3 sleep state confirmed 0.00 L/min</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">LoRaWAN SF7 • RSSI -68dBm</span>
+</div>
+<div class="py-2.5 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-mono text-on-surface-variant font-label-sm text-label-sm">04:34:40.890</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">HEARTBEAT_ACK: SM-B04-FL4 steady state nominal 4.21 L/min</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">LoRaWAN SF7 • RSSI -69dBm</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

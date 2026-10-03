@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-primary":"#006875","secondary-fixed-dim":"#89ceff","surface-container-low":"#161b29","on-primary-fixed-variant":"#004f58","on-secondary":"#00344d","on-background":"#dde2f5","outline":"#849396","error-container":"#93000a","on-error":"#690005","error":"#ffb4ab","inverse-on-surface":"#2a303f","on-tertiary-fixed":"#002113","surface-tint":"#00daf3","primary-container":"#00e5ff","surface-container-highest":"#2f3543","background":"#0d1320","on-tertiary-fixed-variant":"#005236","surface-container":"#1a1f2d","surface-container-lowest":"#080e1b","primary-fixed-dim":"#00daf3","on-error-container":"#ffdad6","on-primary-container":"#00626e","inverse-surface":"#dde2f5","secondary-container":"#00a2e6","on-secondary-fixed":"#001e2f","surface":"#0d1320","tertiary":"#a8ffd2","on-primary-fixed":"#001f24","on-tertiary":"#003824","tertiary-fixed-dim":"#4edea3","tertiary-container":"#5be9ad","on-tertiary-container":"#006645","on-secondary-fixed-variant":"#004c6e","outline-variant":"#3b494c","surface-variant":"#2f3543","secondary":"#89ceff","on-secondary-container":"#00344e","on-surface":"#dde2f5","secondary-fixed":"#c9e6ff","surface-bright":"#333948","surface-dim":"#0d1320","primary":"#c3f5ff","primary-fixed":"#9cf0ff","on-primary":"#00363d","surface-container-high":"#242a38","on-surface-variant":"#bac9cc","tertiary-fixed":"#6ffbbe"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter-sm":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","margin-sm":"1rem","gutter":"1.5rem","space-xl":"2.5rem","margin":"2rem","margin-lg":"3rem","space-md":"1rem","space-xs":"0.25rem","gutter-lg":"2rem"},fontFamily:{"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-md":["Inter"],"display-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"title-md":["Inter"],"label-sm":["Inter"],"display-xl-mobile":["Plus Jakarta Sans"],"display-xl":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-lg":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"display-lg":["44px",{lineHeight:"52px",letterSpacing:"-0.025em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"display-xl-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"display-xl":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"500"}],"display-lg-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col pt-space-lg px-gutter-sm"><div class="flex items-center justify-between px-space-xs mb-space-xl"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary-container text-[22px]">water_drop</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">AQUIANT</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase mt-1">Water Intelligence</span></div></div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-primary">ENTERPRISE</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary-container font-headline-sm" data-path="command-center" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Command Center</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="live-monitoring" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">waves</span><span class="font-body-md text-body-md">Live Monitoring</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="leakage-intelligence" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">warning</span><span class="font-body-md text-body-md">Leakage Intelligence</span></div><span class="w-5 h-5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm flex items-center justify-center font-bold">1</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ai-water-intelligence" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span class="font-body-md text-body-md">AI Intelligence</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-body-md text-body-md">Analytics</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="water-savings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-body-md text-body-md">Water Savings</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="alerts" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-body-md text-body-md">Alerts</span></div></a></nav></div><div class="flex flex-col gap-space-sm p-gutter-sm bg-surface-container-lowest"><div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Grid</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">unfold_more</span></div><span class="font-title-md text-title-md text-on-surface truncate">Campus Central</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">6 Smart Hydro-Meters</span></div><div class="flex items-center justify-between px-space-sm py-1.5 rounded-lg bg-surface-container-low"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Mesh Telemetry</span></div><span class="font-label-sm text-label-sm text-tertiary font-semibold">99.8%</span></div><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface leading-tight">Elena Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-0.5">Chief Hydrologist</span></div></div><button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-[20px]">settings</span></button></div></div></aside><div class="pl-72 min-h-screen flex flex-col"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="font-body-sm text-body-sm">Greenwood Uni</span><span class="font-label-sm text-label-sm">/</span><span class="font-body-sm text-body-sm text-on-surface font-semibold">Campus Central</span></div><div class="h-4 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-low"><span class="material-symbols-outlined text-secondary text-[16px]">cloud</span><span class="font-label-sm text-label-sm text-on-surface-variant">31.2°C • 0mm Precip • Clear</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container/20"><span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span><span class="font-label-sm text-label-sm text-error font-medium">1 Anomaly Detected</span></div></div><div class="flex items-center gap-space-sm"><button class="flex items-center gap-2 px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors"><span class="material-symbols-outlined text-[18px]">download</span><span>Export Report</span></button><button class="flex items-center gap-2 px-space-md py-2 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:brightness-110 transition-all"><span class="material-symbols-outlined text-[18px]">emergency_home</span><span>Dispatch Squad</span></button><div class="h-6 w-px bg-surface-container-highest mx-1"></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-margin-lg py-margin flex flex-col gap-space-xl">
+<!-- 1. EXECUTIVE HEADER & PRIMARY INSIGHT -->
+<section class="flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-tertiary">Executive Telemetry Deck</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Greenwood University Campus • 6 Smart Meter Nodes</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>97.2% dynamic budget utilized</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[15px] text-tertiary">verified_user</span>
+<span>0 false alarms</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high text-error font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+<span>1 verified anomaly</span>
+</div>
+</div>
+</div>
+<!-- Core Metric Dominance Block -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-xl shadow-xl flex flex-col md:flex-row md:items-baseline justify-between gap-space-lg">
+<div class="flex flex-col gap-space-sm z-10">
+<span class="font-label-md text-label-md tracking-wider uppercase text-on-surface-variant">Total Water Measured Today</span>
+<div class="flex items-baseline gap-space-sm flex-wrap">
+<span class="font-display-xl text-display-xl text-primary font-bold tracking-tight">117,277</span>
+<span class="font-headline-md text-headline-md text-on-surface-variant font-normal">Litres</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2 mt-1">
+<span class="text-tertiary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+              3,423 L under dynamic daily budget
+            </span>
+<span class="text-outline-variant">•</span>
+<span>120,700 L target envelope</span>
+<span class="text-outline-variant">•</span>
+<span>+5.7% vs 30-day baseline</span>
+</p>
+</div>
+<!-- Metric micro-gauge sparkline -->
+<div class="flex flex-col gap-2 z-10 min-w-[240px]">
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm">
+<span>Hydraulic Envelope Utilization</span>
+<span class="text-primary font-semibold">97.2%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full rounded-full bg-gradient-to-r from-secondary-container to-primary-container" style="width: 97.2%;"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm opacity-70">
+<span>0 L</span>
+<span>120,700 L Dynamic Cap</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. ACTIVE ANOMALY & INTELLIGENCE SPOTLIGHT -->
+<section class="rounded-xl bg-surface-container p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-error text-[22px]">warning</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3 flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full bg-error-container/20 text-error font-label-sm text-label-sm font-semibold tracking-wide">
+                ANOMALY DETECTED • HIGH SEVERITY
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Telemetry UID: HYD-9042-B</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Zone B — Floor 2 (Residential Hall Riser)</h2>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors" id="simBtn">
+            Simulate Isolation
+          </button>
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:brightness-110 transition-all font-semibold shadow-md" id="investigateBtn">
+<span>Investigate Anomaly</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md pt-space-xs">
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Observed Flow Rate</span>
+<div class="flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-error font-bold">18.9</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">L/min</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Learned baseline: 3.5 L/min</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Duration In Breach</span>
+<div class="flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface font-bold">4h 15m</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Continuous</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Began today at 01:15 AM</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Projected Volume Loss</span>
+<div class="flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-error font-bold">5,775</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">L/day</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">~4.9% of total campus intake</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Financial Exposure</span>
+<div class="flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-on-surface font-bold">$658.35</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/mo</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary">Isolation saves $21.94/day</span>
+</div>
+</div>
+</section>
+<!-- 3. MAIN VISUALIZATION: 24-HOUR HYDRAULIC DEMAND ENVELOPE -->
+<section class="rounded-xl bg-surface-container p-space-lg shadow-md flex flex-col gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Diurnal Hydraulic Envelope</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-primary">24h Real-Time Flow</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Learned neural band compared against smart-meter hydro-telemetry</p>
+</div>
+<!-- Filter Pills -->
+<div class="flex items-center gap-1.5 flex-wrap bg-surface-container-low p-1 rounded-lg">
+<button class="px-3 py-1 rounded-md text-on-primary-container bg-primary-container font-label-md text-label-md font-semibold">
+            All Campus Combined
+          </button>
+<button class="px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md">
+            Block B
+          </button>
+<button class="px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md">
+            Garden Zone 2
+          </button>
+<button class="px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md">
+            Overhead Tank 2
+          </button>
+<button class="px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md">
+            Hostel North
+          </button>
+</div>
+</div>
+<!-- Legend & Diagnostic Badges -->
+<div class="flex flex-wrap items-center gap-space-lg text-on-surface-variant font-label-sm text-label-sm border-b pb-space-sm border-surface-container-highest/40">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded-sm bg-primary/20"></span>
+<span>Learned Baseline Envelope (Confidence 99.4%)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-4 h-0.5 bg-primary-container"></span>
+<span>Actual Measured Flow (L/min)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded-sm bg-error/20"></span>
+<span class="text-error font-medium">Nighttime Breach Window (01:15 AM — 05:00 AM)</span>
+</div>
+</div>
+<!-- SVG Chart Container -->
+<div class="w-full h-80 relative flex items-center justify-center">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 1000 300">
+<defs>
+<lineargradient id="envelopeGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#00e5ff" stop-opacity="0.18"></stop>
+<stop offset="100%" stop-color="#00e5ff" stop-opacity="0.02"></stop>
+</lineargradient>
+<lineargradient id="anomalyGlow" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#ffb4ab" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#ffb4ab" stop-opacity="0.03"></stop>
+</lineargradient>
+</defs>
+<!-- Horizontal Subtle Gridlines -->
+<line opacity="0.4" stroke="#2f3543" stroke-dasharray="4,4" x1="0" x2="1000" y1="60" y2="60"></line>
+<line opacity="0.4" stroke="#2f3543" stroke-dasharray="4,4" x1="0" x2="1000" y1="130" y2="130"></line>
+<line opacity="0.4" stroke="#2f3543" stroke-dasharray="4,4" x1="0" x2="1000" y1="200" y2="200"></line>
+<line opacity="0.6" stroke="#2f3543" x1="0" x2="1000" y1="270" y2="270"></line>
+<!-- Nocturnal Anomaly Highlight Zone (01:15 to 05:00) -->
+<rect fill="url(#anomalyGlow)" height="240" rx="6" width="156" x="52" y="30"></rect>
+<!-- Learned Baseline Band (Envelope: Lower bound and Upper bound) -->
+<path d="M 0,260 
+                   C 100,265 150,260 200,230 
+                   C 260,190 320,80 400,70 
+                   C 480,60 550,110 620,120 
+                   C 700,130 780,70 850,75 
+                   C 920,80 960,180 1000,210 
+                   L 1000,250 
+                   C 960,220 920,130 850,125 
+                   C 780,120 700,175 620,165 
+                   C 550,155 480,115 400,125 
+                   C 320,135 260,240 200,265 
+                   C 150,285 100,285 0,285 Z" fill="url(#envelopeGrad)"></path>
+<!-- Upper Bound Curve Boundary -->
+<path d="M 0,260 C 100,265 150,260 200,230 C 260,190 320,80 400,70 C 480,60 550,110 620,120 C 700,130 780,70 850,75 C 920,80 960,180 1000,210" fill="none" opacity="0.5" stroke="#00daf3" stroke-dasharray="3,3" stroke-width="1.2"></path>
+<!-- Lower Bound Curve Boundary -->
+<path d="M 0,285 C 100,285 150,285 200,265 C 260,240 320,135 400,125 C 480,115 550,155 620,165 C 700,175 780,120 850,125 C 920,130 960,220 1000,250" fill="none" opacity="0.3" stroke="#00daf3" stroke-dasharray="3,3" stroke-width="1"></path>
+<!-- Actual Measured Continuous Wave -->
+<path d="M 0,270 
+                   C 30,270 45,210 52,195 
+                   C 80,190 120,188 160,192 
+                   C 195,196 208,225 240,215 
+                   C 280,200 320,95 400,85 
+                   C 480,75 550,135 620,140 
+                   C 700,145 780,90 850,92 
+                   C 920,94 960,195 1000,228" fill="none" stroke="#00e5ff" stroke-linecap="round" stroke-width="3"></path>
+<!-- Anomaly breach marker indicator -->
+<circle class="animate-pulse" cx="120" cy="189" fill="#ffb4ab" r="6"></circle>
+<circle cx="120" cy="189" fill="#93000a" opacity="0.35" r="14"></circle>
+<!-- Callout pointer on chart -->
+<line stroke="#ffb4ab" stroke-dasharray="2,2" stroke-width="1.5" x1="120" x2="120" y1="175" y2="105"></line>
+<g transform="translate(70, 75)">
+<rect fill="#242a38" height="26" rx="4" width="105"></rect>
+<text fill="#ffdad6" font-family="Inter" font-size="11" font-weight="600" x="6" y="17">Breach: 18.9 L/m</text>
+</g>
+<!-- Current live flow point (far right) -->
+<circle cx="1000" cy="228" fill="#00e5ff" r="5"></circle>
+<circle cx="1000" cy="228" fill="#00daf3" opacity="0.3" r="10"></circle>
+</svg>
+<!-- Time Axis Marks (HTML for sharp typography) -->
+<div class="absolute bottom-0 left-0 right-0 flex justify-between text-on-surface-variant font-label-sm text-label-sm pt-2">
+<span>00:00</span>
+<span class="text-error font-medium">02:00 (Leak Active)</span>
+<span>04:00</span>
+<span>06:00</span>
+<span>08:00 (Wake Spike)</span>
+<span>10:00</span>
+<span>12:00</span>
+<span>14:00</span>
+<span>16:00</span>
+<span>18:00 (Evening Surge)</span>
+<span>20:00</span>
+<span>22:00 (Now)</span>
+</div>
+</div>
+</section>
+<!-- 4. BUILDING & ZONE SPATIAL OVERVIEW -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Facility Sector Distribution</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time status across 4 key operational sub-grids</p>
+</div>
+<button class="font-label-md text-label-md text-primary flex items-center gap-1 hover:underline">
+<span>All Meter Telemetry</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Sector 1: Block B (Alert) -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col justify-between gap-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Residential Sector</span>
+<span class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-error-container/20 text-error font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                Anomaly
+              </span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface mt-1">Block B — Dorms</h4>
+<div class="flex items-baseline gap-1 mt-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">41,402</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Litres</span>
+</div>
+<p class="font-body-sm text-body-sm text-error mt-1">Abnormal nocturnal baseflow spike</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-surface-container-highest/50">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Meter: B-02-FL2</span>
+<button class="text-error font-label-md text-label-md font-semibold hover:underline flex items-center gap-0.5">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</button>
+</div>
+</div>
+<!-- Sector 2: Garden Zone 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col justify-between gap-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Irrigation Zone</span>
+<span class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Nominal
+              </span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface mt-1">Garden Zone 2 — Lawns</h4>
+<div class="flex items-baseline gap-1 mt-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">3,405</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Litres</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Smart sprinklers cycle completed</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-surface-container-highest/50">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cycle: 04:30 AM</span>
+<button class="text-primary font-label-md text-label-md font-semibold hover:underline flex items-center gap-0.5">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</button>
+</div>
+</div>
+<!-- Sector 3: Overhead Tank 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col justify-between gap-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Central Storage</span>
+<span class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Nominal
+              </span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface mt-1">Overhead Tank 2 — South</h4>
+<div class="flex items-baseline gap-1 mt-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">42,100</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Litres</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">45,000 L reserve @ 84% capacity</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-surface-container-highest/50">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pressure: 3.4 bar</span>
+<button class="text-primary font-label-md text-label-md font-semibold hover:underline flex items-center gap-0.5">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</button>
+</div>
+</div>
+<!-- Sector 4: Hostel North -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col justify-between gap-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Academic Wing</span>
+<span class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Nominal
+              </span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface mt-1">Hostel North — Floor 3</h4>
+<div class="flex items-baseline gap-1 mt-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">18,750</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Litres</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Sanitary fixtures within envelope</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-surface-container-highest/50">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Zero drift</span>
+<button class="text-primary font-label-md text-label-md font-semibold hover:underline flex items-center gap-0.5">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. COMPACT AI INTELLIGENCE & CONSERVATION STORY -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- AI Root-Cause Diagnostic Card -->
+<div class="lg:col-span-7 p-space-lg rounded-xl bg-surface-container flex flex-col justify-between gap-space-md shadow-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-md bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[18px]">auto_awesome</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold tracking-wider uppercase">AI Root-Cause Inference</span>
+<span class="ml-auto font-label-sm text-label-sm text-on-surface-variant">Model Confidence: 94%</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Continuous flat nocturnal draw in <strong class="text-primary font-semibold">Block B (18.9 L/min)</strong> during 3.2% recorded sleep occupancy strongly indicates a <span class="text-error font-medium">pressurized sub-surface line breach</span> rather than fixture tap negligence.
+          </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between flex-wrap gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check</span>
+<span>Recommended: Remote-close Actuator Valve BV-202 before morning rush (06:30 AM)</span>
+</div>
+<button class="text-primary font-label-md text-label-md font-semibold hover:underline">
+            Execute Isolation
+          </button>
+</div>
+</div>
+<!-- Conservation Milestone Card -->
+<div class="lg:col-span-5 p-space-lg rounded-xl bg-surface-container flex flex-col justify-between gap-space-md shadow-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-tertiary font-semibold uppercase tracking-wider">Conservation Impact</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">verified</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface font-bold mt-1">24,680 L</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Total wastage prevented across Greenwood campus this billing month</p>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm">
+<span>LEED Platinum Net-Zero Target</span>
+<span class="text-tertiary font-semibold">78.5% Achieved</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full rounded-full bg-tertiary" style="width: 78.5%;"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm opacity-80 pt-1">
+<span>$1,240 utility expenditure preserved</span>
+<span class="text-on-surface font-medium">Goal: 100,000 L/qtr</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for button triggers
+  document.getElementById('investigateBtn')?.addEventListener('click', function() {
+    alert('Opening High-Resolution Hydraulic Telemetry Slide-over for Zone B Riser...');
+  });
+
+  document.getElementById('simBtn')?.addEventListener('click', function() {
+    alert('Simulating remote valve BV-202 cut-off. Estimated pressure balance: Nominal 3.1 bar maintained across Block A & C.');
+  });
+</script></main></div></body></html>

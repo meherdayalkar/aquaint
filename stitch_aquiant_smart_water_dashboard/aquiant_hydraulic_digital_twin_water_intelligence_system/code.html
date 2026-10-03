@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#00626e","on-primary-fixed-variant":"#004f58","outline":"#849396","primary-fixed":"#9cf0ff","inverse-on-surface":"#2a303e","tertiary":"#ffe7e8","primary":"#c3f5ff","on-tertiary-fixed-variant":"#92002a","surface-container-highest":"#2f3542","on-primary-fixed":"#001f24","on-primary":"#00363d","secondary":"#4edea3","secondary-container":"#00a572","on-error":"#690005","surface":"#0d131f","on-error-container":"#ffdad6","on-secondary-fixed-variant":"#005236","outline-variant":"#3b494c","primary-fixed-dim":"#00daf3","secondary-fixed-dim":"#4edea3","error":"#ffb4ab","inverse-surface":"#dde2f4","surface-container":"#1a202c","on-secondary-container":"#00311f","surface-container-high":"#242a37","on-secondary":"#003824","tertiary-fixed-dim":"#ffb2b7","surface-container-lowest":"#080e1a","background":"#0d131f","on-background":"#dde2f4","tertiary-fixed":"#ffdadb","secondary-fixed":"#6ffbbe","on-tertiary":"#67001b","tertiary-container":"#ffc1c4","inverse-primary":"#006875","error-container":"#93000a","surface-tint":"#00daf3","on-surface-variant":"#bac9cc","on-tertiary-container":"#b40036","surface-container-low":"#161c28","on-secondary-fixed":"#002113","surface-bright":"#333947","primary-container":"#00e5ff","on-surface":"#dde2f4","on-tertiary-fixed":"#40000d","surface-variant":"#2f3542","surface-dim":"#0d131f"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","margin-tablet":"1.5rem","space-xl":"2rem","space-lg":"1.5rem","space-2xl":"3rem","margin-desktop":"2rem","space-xs":"0.25rem","gutter":"1rem","margin":"1rem"},"fontFamily":{"body-sm":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"code-mono":["Inter"],"telemetry-metric-md":["Plus Jakarta Sans"],"body-md":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"display-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"display-md-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"telemetry-metric-xl":["Plus Jakarta Sans"]},"fontSize":{"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"code-mono":["12px",{"lineHeight":"16px","fontWeight":"500"}],"telemetry-metric-md":["20px",{"lineHeight":"26px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-md":["36px",{"lineHeight":"44px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-md-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"telemetry-metric-xl":["32px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_4px_24px_rgba(8,14,26,0.8)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-surface-container-high flex items-center justify-center shadow-[0_0_16px_rgba(0,229,255,0.25)]"><span class="material-symbols-outlined text-primary-container text-[22px]">water_drop</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">AQUIANT</span><span class="px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-highest text-primary-fixed font-label-sm text-label-sm uppercase">AI Water Intel</span></div><span class="font-code-mono text-[10px] text-outline tracking-wider">GRID TELEMETRY // L4-OS</span></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low"><span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">corporate_fare</span><span class="font-label-md text-label-md text-on-surface">Campus Facility — Greenwood University</span><span class="px-1.5 py-0.5 rounded-full bg-surface-container-high text-outline text-[10px] font-code-mono">6 Smart Meters</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-xl bg-surface-container-lowest" data-active-classes="bg-primary-container text-on-primary-fixed font-bold rounded-lg shadow-[0_0_12px_rgba(0,229,255,0.35)]"><a aria-current="page" class="px-space-md py-1.5 transition-all bg-primary-container text-on-primary-fixed font-bold rounded-lg shadow-[0_0_12px_rgba(0,229,255,0.35)]" data-path="telemetry-dashboard" href="#">Telemetry Dashboard</a><a class="px-space-md py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="what-if-simulator" href="#">What-If Simulator</a><a class="px-space-md py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="zone-matrix" href="#">Zone Matrix</a><a class="px-space-md py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="briefing-reports" href="#">Briefing</a></nav><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high"><span class="material-symbols-outlined text-secondary-fixed text-[16px]">wb_sunny</span><span class="font-code-mono text-code-mono text-on-surface">31.2°C</span><span class="text-outline text-xs">|</span><span class="font-code-mono text-code-mono text-on-surface-variant">0mm Rain</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-error-container/30"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-error"></span></span><span class="font-label-sm text-label-sm text-error uppercase">1 Anomaly Detected</span></div><button class="hidden sm:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-primary-fixed text-[16px]">file_download</span><span class="font-label-md text-label-md">Export Report</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="w-full px-gutter-desktop py-space-xs bg-surface-container-lowest/90 backdrop-blur-md flex flex-wrap items-center justify-between gap-space-md overflow-x-auto"><div class="flex items-center gap-space-sm shrink-0"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">science</span><span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Scenario Suite</span></div><div class="flex items-center gap-1.5 overflow-x-auto py-0.5"><button class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest hover:text-on-surface transition-all" type="button">Normal Baseline</button><button class="px-2.5 py-1 rounded-full bg-error-container/20 text-error font-label-sm text-label-sm hover:bg-error-container/40 hover:text-on-error-container transition-all flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[14px]">warning</span> 1: Block B Leak</button><button class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-highest hover:text-on-surface transition-all flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[14px]">rainy</span> 2: Rain Irrigation</button><button class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-highest hover:text-on-surface transition-all flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[14px]">waves</span> 3: Tank Overflow</button><button class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-highest hover:text-on-surface transition-all flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[14px]">faucet</span> 4: Hostel Tap</button><button class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-highest hover:text-on-surface transition-all flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[14px]">bolt</span> 5: Multi-Incident</button></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden 2xl:flex items-center gap-space-xs font-code-mono text-[11px] text-outline"><span class="text-primary-fixed">Measure</span><span class="text-outline-variant">→</span><span class="text-on-surface-variant">Understand</span><span class="text-outline-variant">→</span><span class="text-error">Detect</span><span class="text-outline-variant">→</span><span class="text-on-surface-variant">Explain</span><span class="text-outline-variant">→</span><span class="text-on-surface-variant">Simulate</span><span class="text-outline-variant">→</span><span class="text-on-surface-variant">Recommend</span><span class="text-outline-variant">→</span><span class="text-secondary-fixed">Save</span></div><button class="px-3 py-1 rounded-lg bg-primary-container text-on-primary-fixed font-label-sm text-label-sm hover:bg-primary-fixed hover:text-on-primary-fixed-variant transition-all flex items-center gap-1.5 shadow-[0_0_12px_rgba(0,229,255,0.3)]" type="button"><span class="material-symbols-outlined text-[15px]">play_arrow</span> Start 7-Step Tour</button></div></div></header><aside class="fixed left-0 top-28 bottom-10 w-64 bg-surface-container-lowest/95 backdrop-blur-xl z-40 flex flex-col justify-between py-space-md"><div class="px-space-md flex flex-col gap-space-sm"><div class="px-space-sm py-1 font-label-sm text-label-sm text-outline uppercase tracking-wider">Infrastructure Hierarchy</div><nav class="flex flex-col gap-1" data-active-classes="bg-surface-container text-primary-container font-semibold rounded-lg"><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-surface-container text-primary-container font-semibold rounded-lg" data-path="telemetry-dashboard" href="#"><span class="material-symbols-outlined text-[18px]">monitoring</span> Campus Wide Matrix</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="smart-meter-network" href="#"><span class="material-symbols-outlined text-[18px]">flowsheet</span> Smart Meter Network</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="hydraulic-nodes" href="#"><span class="material-symbols-outlined text-[18px]">valve</span> Pump &amp; Valve Nodes</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="acoustic-sensors" href="#"><span class="material-symbols-outlined text-[18px]">graphic_eq</span> Acoustic Hydro-Sensors</a></nav><div class="mt-space-md px-space-sm py-1 font-label-sm text-label-sm text-outline uppercase tracking-wider">Intelligence Modules</div><nav class="flex flex-col gap-1" data-active-classes="bg-surface-container text-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="what-if-simulator" href="#"><span class="material-symbols-outlined text-[18px]">model_training</span> Digital Twin Simulator</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="zone-matrix" href="#"><span class="material-symbols-outlined text-[18px]">grid_view</span> Zone Criticality Matrix</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="briefing-reports" href="#"><span class="material-symbols-outlined text-[18px]">summarize</span> Executive Briefings</a></nav></div><div class="px-space-md"><div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-secondary-fixed">Ingestion Active</span><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span></div><span class="font-code-mono text-[10px] text-on-surface-variant">1,420 msgs/sec • 99.98% SLA</span></div></div></aside><div class="pl-64"><main class="w-full min-h-screen pt-28 pb-10 bg-surface"><div class="flex flex-col w-full px-gutter-desktop py-space-md gap-space-lg font-body-md text-on-surface">
+<!-- Scenario Active State Notification Bar -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-sm sm:px-space-md sm:py-2.5 shadow-md flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-primary-container/20 text-primary-fixed-dim font-label-sm text-label-sm uppercase tracking-wider shrink-0">Active State</span>
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold shrink-0">Scenario 1: Block B Nighttime Pipe Leak</span>
+<span class="hidden md:inline text-outline text-xs">•</span>
+<span class="hidden md:inline font-body-sm text-body-sm text-on-surface-variant truncate">Continuous 15.2 L/min flow between 01:15 AM and 05:00 AM while residential occupancy is at 3%.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs font-code-mono text-code-mono text-[11px] shrink-0">
+<span class="text-primary-fixed">Measure</span>
+<span class="text-outline-variant">→</span>
+<span class="text-primary-fixed">Understand</span>
+<span class="text-outline-variant">→</span>
+<span class="text-error font-semibold animate-pulse">Detect</span>
+<span class="text-outline-variant">→</span>
+<span class="text-on-surface-variant">Explain</span>
+<span class="text-outline-variant">→</span>
+<span class="text-on-surface-variant">Simulate</span>
+<span class="text-outline-variant">→</span>
+<span class="text-secondary-fixed">Save</span>
+</div>
+</div>
+<!-- Top KPI Summary Metric Cards (4 Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1: Today's Water Measured -->
+<div class="rounded-xl bg-surface-container-low/80 backdrop-blur-md p-space-md flex flex-col justify-between shadow-lg relative overflow-hidden group hover:bg-surface-container-low transition-all">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Today's Water Measured</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-telemetry-metric-xl text-telemetry-metric-xl text-on-surface tracking-tight">117,277</span>
+<span class="font-label-md text-label-md text-primary-fixed">Litres</span>
+</div>
+<div class="mt-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-code-mono text-code-mono text-on-surface-variant">
+<div class="flex items-center gap-1 text-tertiary-fixed-dim font-medium">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+5.7% vs Baseline</span>
+</div>
+<span>Baseline: 111,002 L</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+</div>
+<!-- KPI 2: Dynamic Daily Budget -->
+<div class="rounded-xl bg-surface-container-low/80 backdrop-blur-md p-space-md flex flex-col justify-between shadow-lg relative overflow-hidden group hover:bg-surface-container-low transition-all">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-secondary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Dynamic Daily Budget</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">adjust</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-telemetry-metric-xl text-telemetry-metric-xl text-on-surface tracking-tight">120,700</span>
+<span class="font-label-md text-label-md text-outline">L Target</span>
+</div>
+<div class="mt-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-code-mono text-code-mono">
+<span class="text-secondary-fixed font-semibold">3,423 L Left</span>
+<span class="text-on-surface-variant">97.2% Used</span>
+</div>
+<div class="px-2 py-1 rounded-DEFAULT bg-surface-container-high/80 text-[11px] font-body-sm text-on-surface-variant flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-secondary text-[14px] shrink-0">thermostat</span>
+<span class="truncate">Budget adjusted +20% on landscape due to 31.2°C</span>
+</div>
+</div>
+</div>
+<!-- KPI 3: Water Waste Detected -->
+<div class="rounded-xl bg-surface-container-low/80 backdrop-blur-md p-space-md flex flex-col justify-between shadow-lg relative overflow-hidden group hover:bg-surface-container-low transition-all">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-error/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-error uppercase tracking-wider">Water Waste Detected</span>
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+</div>
+<div class="w-8 h-8 rounded-lg bg-error-container/30 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-telemetry-metric-xl text-telemetry-metric-xl text-error tracking-tight">6,431</span>
+<span class="font-label-md text-label-md text-error/80">L Wasted</span>
+</div>
+<div class="mt-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-code-mono text-code-mono">
+<span class="text-on-surface-variant">Financial Loss: <strong class="text-error font-semibold">$658.35/mo</strong></span>
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-error-container/40 text-error font-label-sm text-[10px] uppercase font-bold tracking-wider">1 Critical</span>
+</div>
+<a class="text-[12px] font-label-md text-error/90 hover:text-error flex items-center justify-between pt-0.5" href="#active-fingerprints">
+<span class="truncate">Top Issue: Sub-Surface / Riser Pipe Leak</span>
+<span class="material-symbols-outlined text-[15px]">north_east</span>
+</a>
+</div>
+</div>
+<!-- KPI 4: Recoverable Savings -->
+<div class="rounded-xl bg-surface-container-low/80 backdrop-blur-md p-space-md flex flex-col justify-between shadow-lg relative overflow-hidden group hover:bg-surface-container-low transition-all">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Recoverable Savings</span>
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-telemetry-metric-xl text-telemetry-metric-xl text-primary-container tracking-tight">5,775</span>
+<span class="font-label-md text-label-md text-primary-fixed">L/day</span>
+</div>
+<div class="mt-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between font-code-mono text-[11px] text-on-surface-variant">
+<span>Recoverable: <span class="text-primary-fixed">$658.35/mo</span></span>
+<span class="text-secondary-fixed">-173,250 L/mo</span>
+</div>
+<button class="w-full py-1.5 px-space-sm rounded-lg bg-primary-container text-on-primary-fixed font-label-md text-label-md hover:bg-primary-fixed hover:text-on-primary-fixed-variant transition-all flex items-center justify-center gap-1.5 shadow-[0_0_16px_rgba(0,229,255,0.35)]" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Launch What-If Simulator</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Central Telemetry Chart Section -->
+<div class="w-full rounded-xl bg-surface-container-low/90 backdrop-blur-xl p-space-md sm:p-space-lg shadow-xl flex flex-col gap-space-md">
+<!-- Chart Header & Legend Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">show_chart</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">24-Hour Smart Meter Telemetry vs Dynamic Baseline</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Real-time hourly volumetric demand curves mapped against learned diurnal expectations and anomaly zones.</p>
+</div>
+<!-- Legend Tags -->
+<div class="flex flex-wrap items-center gap-space-sm font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 px-2 py-1 rounded-DEFAULT bg-surface-container-high text-on-surface-variant">
+<span class="w-3 h-2 rounded-xs bg-primary-fixed/30 inline-block"></span>
+<span>Normal Expected Envelope</span>
+</div>
+<div class="flex items-center gap-1.5 px-2 py-1 rounded-DEFAULT bg-surface-container-high text-on-surface">
+<span class="w-3 h-0.5 bg-primary-container inline-block"></span>
+<span>Actual Flow</span>
+</div>
+<div class="flex items-center gap-1.5 px-2 py-1 rounded-DEFAULT bg-surface-container-high text-secondary-fixed">
+<span class="w-3 h-0.5 border-t border-dashed border-secondary inline-block"></span>
+<span>Simulated Fix Curve</span>
+</div>
+<div class="flex items-center gap-1.5 px-2 py-1 rounded-DEFAULT bg-error-container/30 text-error">
+<span class="w-2 h-2 rounded-full bg-error animate-ping inline-block"></span>
+<span>Anomaly Spike</span>
+</div>
+</div>
+</div>
+<!-- Filter Zone Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 text-label-sm font-label-sm">
+<button class="px-3 py-1 rounded-full bg-primary-container text-on-primary-fixed font-bold shadow-[0_0_12px_rgba(0,229,255,0.3)] shrink-0" type="button">All Combined (Total Campus)</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-colors shrink-0 flex items-center gap-1.5" type="button">
+<span class="w-2 h-2 rounded-full bg-error"></span> Block B
+      </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-colors shrink-0 flex items-center gap-1.5" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Garden Zone 2
+      </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-colors shrink-0 flex items-center gap-1.5" type="button">
+<span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span> Overhead Tank 2
+      </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-colors shrink-0 flex items-center gap-1.5" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span> Hostel Wing North
+      </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-colors shrink-0 flex items-center gap-1.5" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span> Block A
+      </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-colors shrink-0 flex items-center gap-1.5" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span> Block C
+      </button>
+</div>
+<!-- Main Dynamic SVG Telemetry Graphic -->
+<div class="w-full h-80 relative rounded-xl bg-surface-container-lowest/80 p-space-sm sm:p-space-md overflow-hidden flex flex-col justify-between">
+<!-- Flow Scale Indicators -->
+<div class="absolute left-3 top-3 bottom-8 flex flex-col justify-between font-code-mono text-[10px] text-outline pointer-events-none select-none">
+<span>11,500 L</span>
+<span>8,625 L</span>
+<span>5,750 L</span>
+<span>2,875 L</span>
+<span>0 L</span>
+</div>
+<!-- SVG Chart Area -->
+<div class="w-full h-full pl-12 pr-4 relative">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 1000 320">
+<defs>
+<!-- Baseline Envelope Gradient -->
+<lineargradient id="envelopeGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#00daf3" stop-opacity="0.18"></stop>
+<stop offset="100%" stop-color="#00daf3" stop-opacity="0.01"></stop>
+</lineargradient>
+<!-- Actual Flow Under-Area Glow Gradient -->
+<lineargradient id="flowGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#00e5ff" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#00e5ff" stop-opacity="0.0"></stop>
+</lineargradient>
+<filter height="140%" id="cyanGlow" width="140%" x="-20%" y="-20%">
+<fegaussianblur result="blur" stddeviation="3"></fegaussianblur>
+<fecomposite in="SourceGraphic" in2="blur" operator="over"></fecomposite>
+</filter>
+</defs>
+<!-- Horizontal Grid Lines -->
+<line stroke="#3b494c" stroke-dasharray="4 4" stroke-opacity="0.3" x1="0" x2="1000" y1="10" y2="10"></line>
+<line stroke="#3b494c" stroke-dasharray="4 4" stroke-opacity="0.3" x1="0" x2="1000" y1="85" y2="85"></line>
+<line stroke="#3b494c" stroke-dasharray="4 4" stroke-opacity="0.3" x1="0" x2="1000" y1="160" y2="160"></line>
+<line stroke="#3b494c" stroke-dasharray="4 4" stroke-opacity="0.3" x1="0" x2="1000" y1="235" y2="235"></line>
+<line stroke="#3b494c" stroke-opacity="0.5" x1="0" x2="1000" y1="310" y2="310"></line>
+<!-- Normal Diurnal Expected Confidence Envelope -->
+<polygon fill="url(#envelopeGrad)" points="
+            0,280 40,285 85,285 130,280 170,265 210,240 250,190 300,120 350,110 400,140 450,150 500,145 550,130 600,100 650,90 700,115 750,135 800,140 850,160 900,210 950,260 1000,275
+            1000,305 950,295 900,260 850,220 800,200 750,195 700,180 650,150 600,170 550,195 500,210 450,215 400,205 350,175 300,185 250,250 210,295 170,305 130,308 85,310 40,310 0,305
+          "></polygon>
+<!-- Baseline Upper & Lower Boundary Dashes -->
+<path d="M0,280 Q40,285 85,285 T170,265 T250,190 T350,110 T450,150 T550,130 T650,90 T750,135 T850,160 T950,260 L1000,275" fill="none" stroke="#00daf3" stroke-dasharray="3 3" stroke-opacity="0.4" stroke-width="1"></path>
+<path d="M0,305 Q40,310 85,310 T170,305 T250,250 T350,175 T450,215 T550,195 T650,150 T750,195 T850,220 T950,295 L1000,305" fill="none" stroke="#00daf3" stroke-dasharray="3 3" stroke-opacity="0.3" stroke-width="1"></path>
+<!-- Simulated Fix Baseline (Expected during night fix) -->
+<path d="M40,300 C80,305 120,305 170,290" fill="none" opacity="0.9" stroke="#4edea3" stroke-dasharray="5 4" stroke-width="2.5"></path>
+<!-- Actual Flow Under-Area -->
+<path d="
+            M0,290 
+            C40,290 60,250 85,245 
+            C110,240 140,248 170,210 
+            C200,170 230,220 270,170 
+            C310,120 330,105 365,108 
+            C400,110 430,165 480,160 
+            C530,155 570,75 620,70 
+            C670,65 720,135 770,130 
+            C820,125 870,210 920,220 
+            C960,230 985,270 1000,280 
+            L1000,310 L0,310 Z
+          " fill="url(#flowGrad)"></path>
+<!-- Actual Flow Telemetry Trace Curve -->
+<path d="
+            M0,290 
+            C40,290 60,245 85,245 
+            C110,245 140,245 170,205 
+            C200,170 230,220 270,170 
+            C310,120 330,105 365,108 
+            C400,110 430,165 480,160 
+            C530,155 570,75 620,70 
+            C670,65 720,135 770,130 
+            C820,125 870,210 920,220 
+            C960,230 985,270 1000,280
+          " fill="none" filter="url(#cyanGlow)" stroke="#00e5ff" stroke-width="2.5"></path>
+<!-- Telemetry Nodes (Data Points) -->
+<circle cx="85" cy="245" fill="#0d131f" r="4.5" stroke="#ffb4ab" stroke-width="2"></circle>
+<circle cx="170" cy="205" fill="#ffb4ab" r="5" stroke="#ffdad6" stroke-width="2.5"></circle>
+<circle cx="270" cy="170" fill="#c3f5ff" r="3.5"></circle>
+<circle cx="365" cy="108" fill="#c3f5ff" r="4"></circle>
+<circle cx="480" cy="160" fill="#c3f5ff" r="3.5"></circle>
+<circle cx="620" cy="70" fill="#c3f5ff" r="4.5"></circle>
+<circle cx="770" cy="130" fill="#c3f5ff" r="4"></circle>
+<circle cx="920" cy="220" fill="#c3f5ff" r="3.5"></circle>
+<!-- Highlight Anomaly Ripple Rings at 04:00 (x=170) -->
+<circle class="animate-ping" cx="170" cy="205" fill="none" opacity="0.6" r="14" stroke="#ffb4ab" stroke-width="1.5" style="transform-origin: 170px 205px;"></circle>
+<circle cx="170" cy="205" fill="#ffb4ab" fill-opacity="0.1" r="22" stroke="#ffb4ab" stroke-dasharray="2 2" stroke-width="1"></circle>
+<!-- Anomaly Label Pin -->
+<g class="cursor-pointer" transform="translate(170, 160)">
+<rect fill="#690005" fill-opacity="0.9" height="20" rx="4" stroke="#ffb4ab" stroke-width="0.75" width="90" x="-45" y="-22"></rect>
+<text fill="#ffdad6" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle" x="0" y="-8">+15.2 L/min Leak</text>
+<line stroke="#ffb4ab" stroke-dasharray="2 2" stroke-width="1" x1="0" x2="0" y1="-2" y2="40"></line>
+</g>
+</svg>
+</div>
+<!-- X-Axis Timeline Markers -->
+<div class="w-full pl-12 pr-4 flex justify-between font-code-mono text-[10px] text-outline pt-2">
+<span>00:00</span>
+<span>02:00</span>
+<span class="text-error font-semibold">04:00</span>
+<span>06:00</span>
+<span>08:00</span>
+<span>10:00</span>
+<span>12:00</span>
+<span>14:00</span>
+<span>16:00</span>
+<span>18:00</span>
+<span>20:00</span>
+<span>22:00</span>
+<span>23:00</span>
+</div>
+</div>
+<!-- Info callout strip below chart -->
+<div class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-high/60 flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[16px] shrink-0">info</span>
+<span>Dynamic baseline continuously calculated from historical occupancy, diurnal habits, ambient temperature (31.2°C), and live precipitation interlocks.</span>
+</div>
+<a class="text-primary-container hover:text-primary-fixed font-label-md text-label-md flex items-center gap-1 shrink-0" href="#active-fingerprints">
+<span>Open 7-step forensic root-cause</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Lower Section Split Grid: Intelligence & Root Cause Queue -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md" id="active-fingerprints">
+<!-- Left Card (Active Water-Waste Fingerprints - 1 CLASSIFIED) -->
+<div class="lg:col-span-7 rounded-xl bg-surface-container-low/90 backdrop-blur-xl p-space-md sm:p-space-lg shadow-xl flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between border-none">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Active Water-Waste Fingerprints</h3>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Algorithmic pattern recognition of hydraulic waveforms &amp; usage signatures</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">1 Classified</span>
+</div>
+<!-- Incident Classification Detail Box -->
+<div class="rounded-xl bg-surface-container p-space-md flex flex-col gap-space-md relative overflow-hidden shadow-inner">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pl-2">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-error-container text-on-error-container font-label-sm text-label-sm font-bold uppercase">Priority 1</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Block B — Residential Hall</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-error-container/40 text-error font-label-sm text-label-sm uppercase font-semibold">Critical</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-fixed-dim font-label-sm text-label-sm font-semibold">91% Confidence</span>
+</div>
+</div>
+<div class="pl-2 flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-error-container/30 flex items-center justify-center text-error shrink-0">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="flex flex-col">
+<span class="font-code-mono text-[11px] text-outline uppercase tracking-wider">Fingerprint Pattern</span>
+<span class="font-headline-sm text-headline-sm text-error font-bold">Sub-Surface / Riser Pipe Leak</span>
+</div>
+</div>
+<!-- Telemetry Signature Values -->
+<div class="grid grid-cols-3 gap-space-sm pl-2 py-space-xs rounded-lg bg-surface-container-high/60">
+<div class="flex flex-col px-space-sm">
+<span class="font-label-sm text-label-sm text-outline">Observed Flow</span>
+<span class="font-telemetry-metric-md text-telemetry-metric-md text-error font-bold">18.9 L/min</span>
+</div>
+<div class="flex flex-col px-space-sm">
+<span class="font-label-sm text-label-sm text-outline">Expected Normal</span>
+<span class="font-telemetry-metric-md text-telemetry-metric-md text-on-surface font-medium">3.5 L/min</span>
+</div>
+<div class="flex flex-col px-space-sm">
+<span class="font-label-sm text-label-sm text-outline">Duration</span>
+<span class="font-telemetry-metric-md text-telemetry-metric-md text-primary-fixed font-medium">4h 15m continuous</span>
+</div>
+</div>
+<!-- AI Diagnosis Diagnostic Narrative -->
+<div class="pl-2 p-space-sm rounded-lg bg-surface-container-lowest/80 text-body-sm font-body-sm text-on-surface-variant flex flex-col gap-1">
+<div class="flex items-center gap-1 text-primary-fixed font-label-sm text-label-sm uppercase tracking-wide">
+<span class="material-symbols-outlined text-[15px]">psychology</span>
+<span>AI Automated Synthesis</span>
+</div>
+<p class="leading-relaxed">
+            Water consumption in <strong class="text-on-surface">Block B</strong> is abnormal because the building has been continuously drawing water throughout the night despite near-zero active occupancy. This flat, continuous flow pattern is characteristic of a pressurized line rupture or valve seat failure rather than human taps left open.
+          </p>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-baseline gap-space-xs font-code-mono">
+<span class="font-label-sm text-label-sm text-outline">Projected Daily Waste:</span>
+<span class="font-headline-sm text-headline-sm text-error font-bold">5,775 L/day</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">($658.35/mo)</span>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high text-primary-fixed font-label-md text-label-md hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span>Root-Cause Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Right Card (Algorithmic Action Priority Queue) -->
+<div class="lg:col-span-5 rounded-xl bg-surface-container-low/90 backdrop-blur-xl p-space-md sm:p-space-lg shadow-xl flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">checklist</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Algorithmic Action Priority Queue</h3>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-high font-code-mono text-code-mono text-outline text-[11px]">1 ACTIONABLE</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ranked by multi-factor score: Water Wasted (40%) + Cost Loss (25%) + Severity (20%) + Ease of Fix (15%).</span>
+</div>
+<!-- Ranked Item 1 -->
+<div class="rounded-xl bg-surface-container p-space-md flex flex-col gap-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold uppercase tracking-wider">Priority 1</span>
+<span class="font-code-mono text-code-mono text-[11px] text-secondary-fixed">Score: 94.6 / 100</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Sub-Surface / Riser Pipe Leak • Block B</h4>
+<span class="font-body-sm text-body-sm text-outline">Sub-Meter B02 Riser Pipe Breach Detected (91% confidence)</span>
+</div>
+<!-- Priority Metric Trio -->
+<div class="grid grid-cols-3 gap-space-xs py-space-xs text-center rounded-lg bg-surface-container-high">
+<div class="flex flex-col p-1">
+<span class="font-label-sm text-label-sm text-outline">Est. Waste</span>
+<span class="font-headline-sm text-headline-sm text-error font-bold">5,775 <span class="text-[11px] font-normal text-outline">L/d</span></span>
+</div>
+<div class="flex flex-col p-1 border-x border-outline-variant/30">
+<span class="font-label-sm text-label-sm text-outline">Potential Saving</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">173k <span class="text-[11px] font-normal text-outline">L/mo</span></span>
+</div>
+<div class="flex flex-col p-1">
+<span class="font-label-sm text-label-sm text-outline">Ease of Fix</span>
+<span class="font-headline-sm text-headline-sm text-primary-fixed-dim font-semibold">Moderate</span>
+</div>
+</div>
+<!-- Action Trigger Buttons -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<button class="py-2 px-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-1" type="button">
+<span>Forensics</span>
+<span class="material-symbols-outlined text-[15px]">north_east</span>
+</button>
+<button class="py-2 px-space-sm rounded-lg bg-primary-container text-on-primary-fixed font-label-md text-label-md hover:bg-primary-fixed transition-all flex items-center justify-center gap-1.5 shadow-[0_0_14px_rgba(0,229,255,0.3)]" type="button">
+<span class="material-symbols-outlined text-[16px]">instant_mix</span>
+<span>Simulate Fix</span>
+</button>
+</div>
+</div>
+<!-- Quick Context Micro-Card -->
+<div class="p-space-sm rounded-lg bg-surface-container-high/40 flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">verified</span>
+<span>Next scheduled hydraulic balancing run: <strong class="text-on-surface">15 mins</strong></span>
+</div>
+<span class="font-code-mono text-code-mono text-[11px] text-outline">CRON // 00:15 UTC</span>
+</div>
+</div>
+</div>
+</div></main></div><footer class="fixed bottom-0 left-0 right-0 h-10 z-50 bg-surface-container-lowest/95 backdrop-blur-xl px-gutter-desktop flex items-center justify-between text-[11px] font-code-mono text-outline"><div class="flex items-center gap-space-md"><span class="text-primary-fixed">AQUIANT // CORE PLATFORM</span><span class="hidden md:inline text-outline-variant">|</span><span class="hidden md:inline text-on-surface-variant">Pipeline: Measure → Understand → Detect → Explain → Simulate → Recommend → Save</span></div><div class="flex items-center gap-space-md"><span>Telemetry Engine v2.4</span><span class="text-outline-variant">|</span><span class="text-secondary-fixed-dim">ISO 50001 / LEED v4.1 Compliant</span></div></footer></body></html>
